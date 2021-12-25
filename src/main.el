@@ -14,5 +14,7 @@
 ;;; Code:
 
 (require 'pr001)
+(require 'pr002)
 
 (princ (format "PR001: The answer is %d\n" (euler:pr001:answer 1000)))
+(princ (format "PR002: The answer is %d\n" (euler:pr002:answer 4000000)))
