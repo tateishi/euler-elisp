@@ -1,3 +1,18 @@
+;;; test_pr001.el --- A test code for Project euler problem 1 -*- lexical-binding: t -*-
+
+;; Copyright (C) 2021 TATEISHI Tadatoshi
+
+;; Author: TATEISHI Tadatoshi <ishio39@gmail.com>
+;; Created: 2021/12/25
+
+;; This file is NOT part of GNU Emacs.
+
+;;; Commentary:
+
+;; A test code for Project euler problem 1.
+
+;;; Code:
+
 (require 'ert)
 (require 'pr001)
 
