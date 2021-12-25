@@ -1,7 +1,11 @@
 CASK := cask
 TESTS ?= $(wildcard tests/*.el)
 
-.PHONY: build test
+.PHONY: run build test
+
+run: build
+	@echo cask run
+	@cask exec emacs --script src/main.el
 
 build:
 	$(CASK) build
