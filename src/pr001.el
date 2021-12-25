@@ -28,6 +28,8 @@
 
 ;;; Code:
 
+(require 'dash)
+
 (defun euler:pr001:multiple-of-3-or-5 (n)
   (or (equal (% n 3) 0) (equal (% n 5) 0)))
 
@@ -40,6 +42,10 @@
       (setq i (1+ i)))
     x))
 
-(fset 'euler:pr001:answer 'euler:pr001:answer-with-while)
+(defun euler:pr001:answer-with-dash (n)
+  (-sum (-filter #'euler:pr001:multiple-of-3-or-5 (-iota n))))
+
+;(fset 'euler:pr001:answer 'euler:pr001:answer-with-while)
+(fset 'euler:pr001:answer 'euler:pr001:answer-with-dash)
 
 (provide 'pr001)

@@ -4,3 +4,5 @@
 (source melpa)
 
 (files "src/*.el")
+
+(depends-on "dash")
